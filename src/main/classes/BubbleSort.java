@@ -74,13 +74,14 @@ public class BubbleSort implements BubbleSortImpl {
     public char[] sortUsingBubbleSort(char[] characters) {
         for (int i = 0; i < characters.length - 1; i++) {
             for (int j = 0; j < characters.length - i - 1; j++) {
-                if (numbers[j] > numbers[j + 1]) {
-                    long temp = numbers[j];
-                    numbers[j] = numbers[j + 1];
-                    numbers[j + 1] = temp;
+                if (characters[j] > characters[j + 1]) {
+                    char temp = characters[j];
+                    characters[j] = characters[j + 1];
+                    characters[j + 1] = temp;
                 }
             }
-        } //To change body of generated methods, choose Tools | Templates.
+        } 
+        return characters;//To change body of generated methods, choose Tools | Templates.
     }
 
     /**
